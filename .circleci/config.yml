@@ -20,11 +20,11 @@ jobs:
       # - run: 
       #     name: Run tests
       #     command: npm test
-      - run:
-          command: cp junit.xml ~/testresults/
-          when: always
-      - store_test_results:
-          path: ~/junit
+      # - run:
+      #     command: cp junit.xml ~/testresults/
+      #     when: always
+      # - store_test_results:
+      #     path: ~/junit
 workflows:
   basic_workflow:
     jobs:
